@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.sun.source.tree.AssertTree;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -63,4 +64,21 @@ public class AmazonStepDefinitions {
     public void kullaniciGider(String sayfaUrl) {
         Driver.getDriver().get(ConfigReader.getProperty(sayfaUrl));
     }
+
+    @Then("Today's Deals sekmesine tiklar")
+    public void today_s_deals_sekmesine_tiklar() {
+        amazonPage.todaysDeals.click();
+    }
+
+    @Then("Today's Deals sayfasinda {string} yazip arama yapar")
+    public void today_s_deals_sayfasinda_yazip_arama_yapar(String searchedWord) {
+       amazonPage.searchBox.sendKeys(searchedWord +Keys.ENTER);
+    }
+    @Then("ilk ilan isminde {string} gectigini test eder.")
+    public void ilk_ilan_isminde_gectigini_test_eder(String searchedwordVerify) {
+
+        Assert.assertTrue(amazonPage.firstItem.getText().contains(searchedwordVerify));
+
+    }
+
 }

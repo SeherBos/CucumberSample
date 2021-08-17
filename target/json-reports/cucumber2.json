@@ -1,0 +1,85 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-01T13:04:56.526Z",
+        "line": 10,
+        "name": "TC_23 User reads the fifth record to verify",
+        "description": "",
+        "id": "user-connects-to-database;tc-23-user-reads-the-fifth-record-to-verify",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1101219000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I connect to Koala Resort Hotel database",
+            "match": {
+              "location": "dbStepDefinitions.DataBaseJdbcExStepDefinitions.i_connect_to_koala_resort_hotel_database()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 170667000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I get the records of \"Price\" column label from \"tHOTELROOM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"tHOTELROOM\"",
+                  "offset": 47
+                }
+              ],
+              "location": "dbStepDefinitions.DataBaseJdbcExStepDefinitions.iGetTheRecordsOfRowColumnLabelFrom(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76507000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "read and verify that the record of row \u003c5\u003e is matching with \"470.0000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 40
+                },
+                {
+                  "val": "\"470.0000\"",
+                  "offset": 60
+                }
+              ],
+              "location": "dbStepDefinitions.DataBaseJdbcExStepDefinitions.readAndVerifyThatTheRecordOfRowIsMatchingWith(int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jdbcVerify"
+          }
+        ]
+      }
+    ],
+    "name": "User connects to database",
+    "description": "",
+    "id": "user-connects-to-database",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US1015_DataBaseJdbcEx.feature",
+    "tags": []
+  }
+]

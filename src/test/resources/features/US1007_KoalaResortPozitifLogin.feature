@@ -1,3 +1,4 @@
+
 Feature: US10_Koala Resort Hotels Pozitif Login
   @koalaResortPozitifLogin
   Scenario: TC11 kullanici gecerli bilgilerle giris yapar

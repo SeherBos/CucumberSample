@@ -17,8 +17,6 @@ public class EditorDataTableStepDefinitions {
     Faker fake = new Faker();
     String firstName= fake.name().firstName();
 
-
-
     DataTablesPage dataTablesPage = new DataTablesPage();
 
     @When("kullanici {string} sayfasina gider")

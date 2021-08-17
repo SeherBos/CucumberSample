@@ -1,3 +1,4 @@
+
 Feature: US1001_amazon arama
   Scenario: TC01_Amazon Arama Yapma
 

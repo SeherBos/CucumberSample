@@ -40,11 +40,4 @@ public class DataTablesPage {
     public WebElement verifyName;
 
 
-
-
-
-
-
-
-
 }

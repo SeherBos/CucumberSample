@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
 
-        plugin={"html:target//cucumber-reports.html"},
+        plugin={"html:target//cucumber-reports.html",
+        "json:target/json-reports/cucumber.json",
+        "junit:target/xml-report/cucumber.xml"},
 
         //Bu notasyonun gorevi feature dosyalari ile stepDefinition dosylarini birlestirmek
         features="src/test/resources/features",
@@ -17,7 +19,7 @@ import org.junit.runner.RunWith;
   // Bu iki paket altinda kac tane class olursa olsun,
   // herhangi bir class'da yazilan her adim diger class'larda ki adimlarla uyusursa yeni adim olusturmaya gerek kalmaz
 
-        tags="@editorDataTable", // stands for WorkInProgress
+        tags="@report1", // stands for WorkInProgress
         // @TestNG de'ki group gibi calisir
         // eger sadece bir feature veya 1 scenario calistiracaksak, gidip feature dosyasindan calistirabiliriz
         // birden fazla Feature veya Scenario'lara ortak bir tag atamamiz gerekir ve bu tag'i runner'da belirtmek gerekir
@@ -31,7 +33,6 @@ import org.junit.runner.RunWith;
         // or dedigimde yazilan taglardan herhangi birine veya daha fazlasina sahip olanlar calisir
         // eger tum test case'leri calistirmak isterseniz tag'i yorum haline getirmeniz yeterli olur
 
-
         dryRun=false,
 
         // true oldugunda test case'leri calistirmayi denemeden sadece eksik olan step'leri bana verir
@@ -40,7 +41,7 @@ import org.junit.runner.RunWith;
         publish = true
 )
 
-public class Runner {
+public class TestRunner {
 
 
 }

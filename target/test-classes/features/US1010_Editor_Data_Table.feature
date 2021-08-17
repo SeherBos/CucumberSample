@@ -1,3 +1,4 @@
+@report2
 Feature: US101_Editor Data Table
   @editorDataTable
   Scenario: TC14_Data Table Test

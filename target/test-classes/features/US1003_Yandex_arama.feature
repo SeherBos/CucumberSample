@@ -1,3 +1,4 @@
+
 Feature: US1003_Yandex Arama
     Background: kullanici Yandex'e gider
       Given kullanici Yandex'e gider

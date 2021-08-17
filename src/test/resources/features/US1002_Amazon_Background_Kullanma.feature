@@ -1,3 +1,4 @@
+
 Feature: US1002_Amazon Background Kullanma
   Background: sayfayi acma
     Given kullanici amazon sayfasina gider

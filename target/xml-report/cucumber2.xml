@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.016">
+    <testcase classname="User connects to database" name="TC_23 User reads the fifth record to verify" time="1.453">
+        <system-out>
+            <![CDATA[Given I connect to Koala Resort Hotel database..............................passed
+And I get the records of "Price" column label from "tHOTELROOM".............passed
+Then read and verify that the record of row <5> is matching with "470.0000".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,3 +1,4 @@
+@report1
 Feature: US1008_Koala Resort Negatif Login
   @koalaResortNegatifLogin
   Scenario: TC12 kullanici gecersiz bilgilerle giris yapamaz
@@ -9,3 +10,5 @@ Feature: US1008_Koala Resort Negatif Login
     And Login butonuna basar
     Then sayfaya giris yapamadigini kontrol eder
     Then sayfayi kapatir
+
+
